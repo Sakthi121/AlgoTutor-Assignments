@@ -1,0 +1,28 @@
+/*Problem Description
+Implement pow(A, B) % C.
+In other words, given A, B and C, Find (AB % C).
+Note: The remainders on division cannot be negative. In other words, make sure the
+answer you return is non-negative.
+Problem Constraints
+-109 <= A <= 109
+0 <= B <= 109
+1 <= C <= 109
+Input Format
+Given three integers A, B, C.
+Output Format
+Return an integer.
+Example Input
+A = 2, B = 3, C = 3
+Example Output
+2 */
+
+
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+   int A,B,C;
+   scanf("%d %d %d",&A,&B,&C);
+   int m=pow(A,B);
+   printf("%d ",m%C);
+}
