@@ -1,0 +1,36 @@
+class Solution {
+
+	static void reverse(char str[], int start, int end)
+	{
+		
+		char temp;
+		while (start <= end) {
+		
+			temp = str.charAt(start);
+			str.charAt(start) = str.charAt(end);
+			str.charAt(start)= temp;
+			start++;
+			end--;
+		}
+	}
+	
+	static char[] reverseWords(char[] s)
+	{
+		
+
+		int start = 0;
+		for (int end = 0; end < s.length; end++) {
+			
+			if (s[end] == ' ') {
+				reverse(s, start, end);
+				start = end + 1;
+			}
+		}
+
+	
+		
+	
+}
+
+
+}
